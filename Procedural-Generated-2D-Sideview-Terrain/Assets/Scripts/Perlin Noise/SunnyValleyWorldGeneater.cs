@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,11 @@ public class SunnyValleyWorldGeneater : MonoBehaviour
     public float frequency = 0.01f;
 
     public TextMesh textPrefab;
+
+    private void Start()
+    {
+        GenerateMap1DNoise();
+    }
 
     private float GetNoiseValue(int x, int y)
     {

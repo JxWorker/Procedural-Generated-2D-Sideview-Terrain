@@ -183,7 +183,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 50
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.6, y: 44.3, z: -10}
+  m_LocalPosition: {x: 49.9, y: 28.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -258,13 +258,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba5935b80a47f8aa97b0dfae38334af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirtGrass: {fileID: 0}
-  dirtTile: {fileID: 0}
+  dirtGrass: {fileID: 11400000, guid: b9c3d902b9072fbafb2543f59b76a945, type: 2}
+  dirtTile: {fileID: 11400000, guid: 8fb6881d20db63c4796cc9fb8877e98e, type: 2}
   stoneGrass: {fileID: 0}
-  stoneTile: {fileID: 0}
+  stoneTile: {fileID: 11400000, guid: cf86a7e3a18ae4025a17af6e59d984c3, type: 2}
   perlin2D: {fileID: 0}
-  stoneDark: {fileID: 0}
-  dirtDark: {fileID: 0}
+  stoneDark: {fileID: 11400000, guid: 11d4f22cdd3d7ab03900b05e97d2bb50, type: 2}
+  dirtDark: {fileID: 11400000, guid: 2c7d690b53369ec8d947f059d20101d1, type: 2}
 --- !u!1 &588738443
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -397,12 +397,12 @@ GameObject:
   - component: {fileID: 656983303}
   - component: {fileID: 656983302}
   m_Layer: 0
-  m_Name: GeneraterRendererObject
+  m_Name: GeneraterRendererObject-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &656983302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,10 +416,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldRenderer: {fileID: 656983303}
-  blockData: {fileID: 0}
-  mapLength: 50
-  amplitude: 1
-  frequency: 0.01
+  blockData: {fileID: 568075562}
+  mapLength: 200
+  amplitude: 25
+  frequency: 0.02
   textPrefab: {fileID: 0}
 --- !u!114 &656983303
 MonoBehaviour:
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff9857c8cd8daa46b4740318baa3d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundTilemap: {fileID: 0}
-  perlind2dTilemap: {fileID: 0}
-  backgroundTilemap: {fileID: 0}
+  groundTilemap: {fileID: 2090504799}
+  perlind2dTilemap: {fileID: 588738446}
+  backgroundTilemap: {fileID: 821257012}
 --- !u!4 &656983304
 Transform:
   m_ObjectHideFlags: 0
@@ -601,10 +601,80 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 656983304}
+  - {fileID: 1484657593}
   - {fileID: 1883698531}
   - {fileID: 568075561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484657592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484657593}
+  - component: {fileID: 1484657595}
+  - component: {fileID: 1484657594}
+  m_Layer: 0
+  m_Name: GeneraterRendererObject-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484657593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484657592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1170921400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1484657594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484657592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475939d94cf4a95c8be241772f77e839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldRenderer: {fileID: 1484657595}
+  blockData: {fileID: 568075562}
+  heightMapNoiseData: {fileID: 11400000, guid: cde8bbf446b50e336a0336d6250e4b2f, type: 2}
+  stoneNoiseData: {fileID: 11400000, guid: 0ac1c69c67dbac556a91184debc3a806, type: 2}
+  perlin2DData: {fileID: 0}
+  mapLength: 100
+  amplitude: 1
+  frequency: 0.01
+  textPrefab: {fileID: 0}
+--- !u!114 &1484657595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484657592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff9857c8cd8daa46b4740318baa3d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundTilemap: {fileID: 588738446}
+  perlind2dTilemap: {fileID: 2090504799}
+  backgroundTilemap: {fileID: 821257012}
 --- !u!1 &1493068038
 GameObject:
   m_ObjectHideFlags: 0
