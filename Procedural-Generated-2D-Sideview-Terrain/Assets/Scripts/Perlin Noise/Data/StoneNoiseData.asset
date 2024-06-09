@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba171e14881cfd23850d698e5b1c166, type: 3}
   m_Name: StoneNoiseData
   m_EditorClassIdentifier: 
-  startFrequency: 0.463
-  octaves: 13
+  startFrequency: 0.31
+  octaves: 6
   persistance: 0.3
-  frequencyModifier: 4.26
-  offset: {x: 1015, y: 0}
+  frequencyModifier: 4
+  offset: {x: 10, y: 0}
   noiseRangeMin: 0
-  noiseRangeMax: 9
+  noiseRangeMax: 7
