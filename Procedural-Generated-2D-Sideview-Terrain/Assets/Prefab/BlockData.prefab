@@ -47,3 +47,5 @@ MonoBehaviour:
   stoneTile: {fileID: 11400000, guid: cf86a7e3a18ae4025a17af6e59d984c3, type: 2}
   grassTile: {fileID: 11400000, guid: b9c3d902b9072fbafb2543f59b76a945, type: 2}
   dirtTile: {fileID: 11400000, guid: 8fb6881d20db63c4796cc9fb8877e98e, type: 2}
+  stoneTileBackground: {fileID: 11400000, guid: 11d4f22cdd3d7ab03900b05e97d2bb50, type: 2}
+  dirtTileBackground: {fileID: 11400000, guid: 2c7d690b53369ec8d947f059d20101d1, type: 2}
