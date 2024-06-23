@@ -277,10 +277,10 @@ public class CellularAutomata : MonoBehaviour
                 {
                     groundTilemap.SetTile(new Vector3Int(i, caveHeight + j + yOffset, 0), blockData.dirtTile);
                 }
-                else
-                {
-                    backgroundTilemap.SetTile(new Vector3Int(i, caveHeight + j + yOffset, 0), blockData.dirtTileBackground);
-                }
+                // else
+                // {
+                //     backgroundTilemap.SetTile(new Vector3Int(i, caveHeight + j + yOffset, 0), blockData.dirtTileBackground);
+                // }
             }
         }
     }
