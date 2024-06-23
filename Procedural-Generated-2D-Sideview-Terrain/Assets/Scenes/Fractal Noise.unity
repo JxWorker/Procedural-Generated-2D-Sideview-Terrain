@@ -219,15 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c695186f9040f40987d0aa23bb9e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.4
-  frequency: 0.05
-  octaves: 3
-  lacunarity: 2
-  persistence: 0.5
-  width: 150
-  seed: 1
-  heightModifier: 100
-  caveModifier: 0.2
+  noiseData: {fileID: 11400000, guid: b2f013a20ce957d428ed484540180ab6, type: 2}
   groundTilemap: {fileID: 935937871}
   backgroundTilemap: {fileID: 1500372841}
   blockData: {fileID: 738146378}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6837dadbf4c0f13478dcd9b6d5cde3ad, type: 3}
+  m_Name: FractalNoiseScriptableObject
+  m_EditorClassIdentifier: 
+  amplitude: 0.4
+  frequency: 0.05
+  octaves: 3
+  lacunarity: 2
+  persistence: 0.5
+  stoneAmplitude: 0.4
+  stoneFrequency: 0.02
+  stoneOctaves: 3
+  stoneLacunarity: 2
+  stonePersistence: 0.5
+  width: 150
+  seed: 1
+  heightModifier: 100
+  caveModifier: 0.2
