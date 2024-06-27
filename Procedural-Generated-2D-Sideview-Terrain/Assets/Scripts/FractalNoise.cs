@@ -4,41 +4,6 @@ using UnityEngine.Tilemaps;
 
 public class FractalNoise : MonoBehaviour
 {
-    // [Header("Noise")]
-    // [SerializeField] [Range(0, 1)]
-    // private float amplitude = 0.4f;
-    // [SerializeField] [Range(0, 0.1f)] 
-    // private float frequency = 0.05f;
-    // [SerializeField] 
-    // private int octaves = 3;
-    // [SerializeField] 
-    // private float lacunarity = 2.0f;
-    // [SerializeField] 
-    // private float persistence = 0.5f;
-    //
-    //
-    // [Header("Stone Noise")]
-    // [SerializeField] [Range(0, 1)]
-    // private float stoneAmplitude = 0.4f;
-    // [SerializeField] [Range(0, 0.1f)] 
-    // private float stoneFrequency = 0.02f;
-    // [SerializeField] 
-    // private int stoneOctaves = 3;
-    // [SerializeField] 
-    // private float stoneLacunarity = 2.0f;
-    // [SerializeField] 
-    // private float stonePersistence = 0.5f;
-    //
-    // [Header("World")]
-    // [SerializeField]
-    // private int width = 150;
-    // [SerializeField] 
-    // private int seed = 1;
-    // [SerializeField] [Range(1, 100)]
-    // private int heightModifier = 100;
-    // [SerializeField] [Range(0, 1)] 
-    // private float caveModifier = 0.2f;
-
     [SerializeField] private FractalNoiseScriptableObject noiseData;
 
     [Header("Render")] 
@@ -51,26 +16,19 @@ public class FractalNoise : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
         {
             _generatorVersion = "WorldRenderer1";
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
         {
             _generatorVersion = "WorldRenderer2";
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
         {
             _generatorVersion = "GenerateWorld3";
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            // WorldRenderer2();
-            // GenerateWorld3();
-            // Invoke(_generatorVersion, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.S))

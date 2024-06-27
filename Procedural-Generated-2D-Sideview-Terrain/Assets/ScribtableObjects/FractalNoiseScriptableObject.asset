@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6837dadbf4c0f13478dcd9b6d5cde3ad, type: 3}
   m_Name: FractalNoiseScriptableObject
   m_EditorClassIdentifier: 
-  amplitude: 0.4
-  frequency: 0.05
+  amplitude: 0.411
+  frequency: 0.0374
   octaves: 3
   lacunarity: 2
   persistence: 0.5
-  stoneAmplitude: 0.4
-  stoneFrequency: 0.02
+  stoneAmplitude: 0.76
+  stoneFrequency: 0.023
   stoneOctaves: 3
   stoneLacunarity: 2
   stonePersistence: 0.5
   width: 150
-  seed: 1
+  seed: -4454
   heightModifier: 100
   caveModifier: 0.2
